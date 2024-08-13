@@ -1,3 +1,0 @@
-﻿Este archivo de entrada tiene varias lineas.
- este archivo con cada linea como viene, en "salida.txt"
-¡No se olviden de esta ultima lineas!

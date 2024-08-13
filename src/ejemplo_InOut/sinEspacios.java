@@ -14,18 +14,19 @@ public class sinEspacios {
         String nombreArchivoSalida = "src/ejemplo_InOut/out/salida.txt";
         String linea = null;
 
-        try (FileReader lectorArchivo = new FileReader(nombreArchivoEntrada)) {
-            FileWriter escritorArchivo = new FileWriter(nombreArchivoSalida);
-            
-            BufferedReader bufferLectura = new BufferedReader(lectorArchivo);
-            BufferedWriter bufferEscritura = new BufferedWriter(escritorArchivo);
+        try {
+            FileReader fileReader = new FileReader(nombreArchivoEntrada);
+            FileWriter fileWriter = new FileWriter(nombreArchivoSalida);
 
-            while ((linea = bufferLectura.readLine()) != null) {
-                bufferEscritura.write(linea.replaceAll(" ", "") +"\n");
+            BufferedReader bufferReader = new BufferedReader(fileReader);
+            BufferedWriter bufferWriter = new BufferedWriter(fileWriter);
+
+            while ((linea = bufferReader.readLine()) != null) {
+                bufferWriter.write(linea.replaceAll(" ", "") +"\n");
             }
 
-            bufferLectura.close();
-            bufferEscritura.close();
+           bufferReader.close();
+            bufferWriter.close();
         } catch (FileNotFoundException ex) {
             System.err.println(ex.getMessage() + "\nSignifica que el archivo del "
                     + "que queriamos leer no existe.");
@@ -39,3 +40,4 @@ public class sinEspacios {
 
     }
 }
+
