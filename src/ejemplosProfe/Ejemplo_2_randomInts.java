@@ -1,4 +1,4 @@
-package ejemplo_InOut;
+package ejemplosProfe;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.BufferedWriter;
