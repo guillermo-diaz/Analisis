@@ -22,7 +22,7 @@ import java.util.Random;
  *
  */
 public class Ejemplo_2_randomInts {
-    static final int CANTNUMEROS = 10000;
+    static final int CANTNUMEROS = 20000;
     static final int MAX_VALOR = 1000000;
     static final String NOMBRE_ARCHIVO = "src/ejemplo_InOut/numeros.txt";
 
