@@ -71,7 +71,7 @@ public class Ej08 {
         
         System.out.println("El promedio del curso es: " + promedioDeCurso(alumnos));
 
-        System.out.println("a "+CANTIDAD_ALUMNOS);
+        System.out.println("Arreglo Ordenado: ");
         for(int i=0; i<CANTIDAD_ALUMNOS; i++) {
             System.out.println(alumnos[i]);
 
