@@ -50,7 +50,7 @@ public class Ejemplo_1_InOut {
              * https://docs.oracle.com/javase/7/docs/api/java/io/FileWriter.html
              */
             FileWriter escritorArchivo = new FileWriter(nombreArchivoSalida);
-
+            
             /* Si bien no es obligatorio, se recomienda fuertemente:
              * Usar buffer para la entrada/salida de un archivo de texto
              * Mejorar la performance de las operaciones de
