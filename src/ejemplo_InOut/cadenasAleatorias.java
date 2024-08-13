@@ -10,7 +10,7 @@ public class cadenasAleatorias {
     private static final int LONGITUD_CADENA = 10;
 
     public static void main(String[] args) {
-        String nombreArchivoSalida = "src/ejemplo_InOut/cadenasAl.txt";
+        String nombreArchivoSalida = "src/ejemplo_InOut/out/cadenasAl.txt";
 
         try(BufferedWriter bufferEscritura = new BufferedWriter(new FileWriter(nombreArchivoSalida))) {
 
