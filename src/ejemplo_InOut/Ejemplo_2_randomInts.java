@@ -1,4 +1,4 @@
-package ejemplos_InOut;
+package ejemplo_InOut;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.BufferedWriter;
