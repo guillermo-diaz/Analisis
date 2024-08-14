@@ -1,23 +1,24 @@
 package ejemplo_InOut;
 
-public class Alumno implements Comparable<Alumno> {
+public class Alumno  {
     
     private String nombre;
     private int[] notas;
     private float promedio;
 
-    private void calcularMedia(){   
+    private float calcularMedia(){   
         float media = 0;
-        for(int i=0; i < notas.length; i++)
+        for(int i=0; i < notas.length; i++){
             media += notas[i];
-        this.promedio = media/notas.length;
+        }
+        return media/notas.length;
     }
 
     public Alumno(String nombre, int[] notas)
     {
         this.nombre = nombre;
         this.notas = notas;
-        calcularMedia();
+        this.promedio = calcularMedia();
     }
 
     public String getNombre()
@@ -41,10 +42,10 @@ public class Alumno implements Comparable<Alumno> {
     }
 
     @Override
-    public String toString()
-    {
+    public String toString() {
         String string = nombre + ": [";
-        for(int i=0; i<notas.length; i++) {
+
+        for (int i=0; i < notas.length; i++) {
             string = string+(String.valueOf(notas[i]) + ", ");
         }
         string = string + "]";
@@ -52,9 +53,5 @@ public class Alumno implements Comparable<Alumno> {
         return string;
     }
 
-    @Override
-    public int compareTo(Alumno o) 
-    {
-        return o.getMedia() - this.getMedia() > 0 ? 1 : -1;
-    }
+    
 }

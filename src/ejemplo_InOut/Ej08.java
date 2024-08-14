@@ -25,23 +25,23 @@ public class Ej08 {
        
         int[] array = new int[size];
         Random random = new Random();
-        for(int i=0; i<size; i++)
+        for(int i=0; i < size; i++)
             array[i] = random.nextInt(11); // [0, 10]
         return array;
     
     }
 
     //metodos de ordenamiento
-    public static void selectionSort(Comparable[] arr) {
+    public static void selectionSort(Alumno[] arr) {
         int n = arr.length;
         for (int i = 0; i < n - 1; i++) {
             int minIndex = i;
             for (int j = i + 1; j < n; j++) {
-                if (arr[j].compareTo(arr[minIndex]) < 0) {
+                if (arr[j].getMedia() > arr[minIndex].getMedia()) {
                     minIndex = j;
                 }
             }
-            Comparable temp = arr[i];
+            Alumno temp = arr[i];
             arr[i] = arr[minIndex];
             arr[minIndex] = temp;
         }
@@ -49,7 +49,7 @@ public class Ej08 {
 
 
     public static void main(String[] args){
-        final int CANTIDAD_ALUMNOS = 20;
+        final int CANTIDAD_ALUMNOS = 15;
         final int CANTIDAD_NOTAS = 5;
         Alumno[] alumnos = new Alumno[CANTIDAD_ALUMNOS];
 
@@ -70,6 +70,7 @@ public class Ej08 {
         
         
         System.out.println("El promedio del curso es: " + promedioDeCurso(alumnos));
+        System.out.println();
 
         System.out.println("Arreglo Ordenado: ");
         for(int i=0; i<CANTIDAD_ALUMNOS; i++) {
