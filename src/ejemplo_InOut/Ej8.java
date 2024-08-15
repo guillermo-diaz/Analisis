@@ -47,9 +47,40 @@ public class Ej8 {
         }
     }
 
+    public static void quickSort(Alumno[] arr, int low, int high) {
+        if (low < high) {
+            int pi = partition(arr, low, high);
+            
+            quickSort(arr, low, pi - 1);
+            quickSort(arr, pi + 1, high);
+        }
+    }
+    
+    private static int partition(Alumno[] arr, int low, int high) {
+        Alumno pivot = arr[high]; //el ultimo
+        int i = low - 1;
+        
+        for (int j = low; j < high; j++) {
+            if (arr[j].getMedia() > pivot.getMedia()) { //mueve los mayores al lado izq del pivote
+                i++;
+                Alumno temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+        
+        //deja el pivote en su lugar
+        Alumno temp = arr[i + 1];
+        arr[i + 1] = arr[high];
+        arr[high] = temp;
+        
+        return i + 1;
+    }
+
+
 
     public static void main(String[] args){
-        final int CANTIDAD_ALUMNOS = 15;
+        final int CANTIDAD_ALUMNOS = 12;
         final int CANTIDAD_NOTAS = 5;
         Alumno[] alumnos = new Alumno[CANTIDAD_ALUMNOS];
 
@@ -61,7 +92,9 @@ public class Ej8 {
             System.out.println(alumnos[i]);
 
         }
+
         selectionSort(alumnos);
+        // quickSort(alumnos, 0, CANTIDAD_ALUMNOS-1);
 
 
         for(int i=0; i<CANTIDAD_NOTAS; i++){
