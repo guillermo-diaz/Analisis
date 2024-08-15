@@ -21,17 +21,18 @@ public class ej3{
             System.out.println("el numero no es mayor a 1");
          }
       }
-      public static Boolean verificarPrimos( int num){
-          if (num <= 1){ return false;} // Números menores o iguales a 1 no son primos
+      public static boolean verificarPrimos( int num){
+          boolean val=true;
           if (num == 2){ return true;}// 2 es el único número par que es primo
           if (num % 2 == 0) {return false;} // Eliminar números pares mayores a 2
-    
           // Verificar divisibilidad desde 3 hasta la raíz cuadrada de num
-          for (int i = 3; i * i <= num; i += 2) {
-             if (num % i == 0) {
-                 return false; // No es primo si es divisible por i
-             }
+          int i=2;
+          while(i < num  && val) {//mientras sea menor a num y no exista otro divisor repetir
+               if(num % i ==0){//no es primo 
+                  val=false;
+               }
+               i++;
           }
-         return true; // El número es primo si no es divisible por ninguno de los anteriores
-     }     
+         return val; // El número es primo si no es divisible por ninguno de los anteriores
+     } 
 }
