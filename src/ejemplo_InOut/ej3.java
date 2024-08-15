@@ -12,7 +12,6 @@ public class ej3{
             for(i=2; i < n ; i++){//recorre el rango
                 //a cada numero del rango verifico si es primo
                 if(verificarPrimos(i)){//si es primo aumenta el contador de numeros primos entre 1 y n
-                    System.out.println(i);
                     cant=cant+1;
                 }
             }
