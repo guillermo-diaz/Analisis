@@ -2,7 +2,7 @@ package ejemplo_InOut;
 
 import java.util.Random;
 
-public class Ej08 {
+public class Ej8 {
 
     private static float promedioAsignatura(int numeroAsignatura, Alumno[] alumnos){
         float promedio = 0;

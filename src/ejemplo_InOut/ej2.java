@@ -1,5 +1,5 @@
 package ejemplo_InOut;
-public class ej2 {
+public class Ej2 {
     public static void main (String [] args){
          char [] matriz={'e','u','o','i','a'};
          metodo(matriz);

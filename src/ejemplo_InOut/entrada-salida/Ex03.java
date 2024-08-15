@@ -1,11 +1,11 @@
-package ejemplo_InOut;
+
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class randomsDeMenos100a100 {
+public class Ex03 {
     public static void main(String[] args) {
         String nombreArchivoSalida = "src/ejemplo_InOut/out/numeroRandomsMenos100a100.txt";
 

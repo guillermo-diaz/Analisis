@@ -1,4 +1,4 @@
-package ejemplo_InOut;
+
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
-public class numerosAleatorios {
+public class Ex05 {
     private static final int MIN = 1;
     private static final int MAX = 1000;
 

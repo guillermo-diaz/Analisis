@@ -2,7 +2,7 @@ package ejemplo_InOut;
 import java.util.Random;
 import java.util.Scanner;
 
-public class adivinarNumero {
+public class Ej4 {
     
     static int inicio = 0;
     static int fin = 100;

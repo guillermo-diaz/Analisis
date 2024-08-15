@@ -1,16 +1,16 @@
-package ejemplo_InOut;
+
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Random;
 
-public class cadenasAleatorias {
+public class Ex04 {
     private static final String CARACTERES = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
     private static final int LONGITUD_CADENA = 10;
 
     public static void main(String[] args) {
-        String nombreArchivoSalida = "src/ejemplo_InOut/out/cadenasAl.txt";
+        String nombreArchivoSalida = "src/ejemplo_InOut/in-out/cadenasAl.txt";
 
         try {
             BufferedWriter bufferEscritura = new BufferedWriter(new FileWriter(nombreArchivoSalida));

@@ -1,4 +1,4 @@
-package ejemplo_InOut;
+
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -7,7 +7,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class lineasImpares {
+public class Ex02 {
     
     public static void main(String[] args) {
         String nombreArchivoEntrada = "src/entrada.txt";

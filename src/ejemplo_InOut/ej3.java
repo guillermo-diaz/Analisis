@@ -1,6 +1,6 @@
 package ejemplo_InOut;
 import java.util.Scanner;
-public class ej3{
+public class Ej3{
       public static void main(String[] args){
          Scanner sc=new Scanner(System.in);
          int n,cant,i;
@@ -24,9 +24,10 @@ public class ej3{
           boolean val=true;
           if (num == 2){ return true;}// 2 es el único número par que es primo
           if (num % 2 == 0) {return false;} // Eliminar números pares mayores a 2
+
           // Verificar divisibilidad desde 3 hasta la raíz cuadrada de num
-          int i=2;
-          while(i < num  && val) {//mientras sea menor a num y no exista otro divisor repetir
+          int i=3;
+          while(i< num  && val) {//mientras sea menor a num y no exista otro divisor repetir
                if(num % i ==0){//no es primo 
                   val=false;
                }

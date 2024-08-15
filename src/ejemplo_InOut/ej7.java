@@ -1,7 +1,7 @@
 package ejemplo_InOut;
 /*Al ordenar una lista de numeros enteros aplicando el algoritmo quicksort, como pivote se
 elige el primer elemento de la lista. ¿que pasarıa si se selecciona otro pivote? */
-public class ej7 {
+public class Ej7 {
         public static void main(String[] args) {
                 int lista[]={20,12,28,24,8,4,16};
         
