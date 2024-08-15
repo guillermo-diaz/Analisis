@@ -15,7 +15,8 @@ public class lineasImpares {
         String linea = null;
         int numeroLinea=1;
 
-        try (FileReader lector = new FileReader(nombreArchivoEntrada)) {
+        try {
+            FileReader lector = new FileReader(nombreArchivoEntrada);
             FileWriter escritor = new FileWriter(nombreArchivoSalida);
             
             BufferedReader bufferLectura = new BufferedReader(lector);

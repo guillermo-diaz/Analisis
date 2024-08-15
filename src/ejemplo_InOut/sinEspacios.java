@@ -25,7 +25,7 @@ public class sinEspacios {
                 bufferWriter.write(linea.replaceAll(" ", "") +"\n");
             }
 
-           bufferReader.close();
+            bufferReader.close();
             bufferWriter.close();
         } catch (FileNotFoundException ex) {
             System.err.println(ex.getMessage() + "\nSignifica que el archivo del "

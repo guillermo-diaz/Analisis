@@ -11,7 +11,7 @@ public class ej3{
 
             for(i=2; i < n ; i++){//recorre el rango
                 //a cada numero del rango verifico si es primo
-                if(virificarPrimos(i)){//si es primo aumenta el contador de numeros primos entre 1 y n
+                if(verificarPrimos(i)){//si es primo aumenta el contador de numeros primos entre 1 y n
                     System.out.println(i);
                     cant=cant+1;
                 }
@@ -21,7 +21,7 @@ public class ej3{
             System.out.println("el numero no es mayor a 1");
          }
       }
-      public static Boolean virificarPrimos( int num){
+      public static Boolean verificarPrimos( int num){
           if (num <= 1){ return false;} // Números menores o iguales a 1 no son primos
           if (num == 2){ return true;}// 2 es el único número par que es primo
           if (num % 2 == 0) {return false;} // Eliminar números pares mayores a 2

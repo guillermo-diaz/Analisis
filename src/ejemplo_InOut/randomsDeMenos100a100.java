@@ -9,8 +9,8 @@ public class randomsDeMenos100a100 {
     public static void main(String[] args) {
         String nombreArchivoSalida = "src/ejemplo_InOut/out/numeroRandomsMenos100a100.txt";
 
-        try (FileWriter escritorArchivo = new FileWriter(nombreArchivoSalida)) {
-
+        try {
+            FileWriter escritorArchivo = new FileWriter(nombreArchivoSalida);
             BufferedWriter bufferEscritura = new BufferedWriter(escritorArchivo);
 
             for (int i = 0; i < 100; i++) { // Generar 100 números aleatorios

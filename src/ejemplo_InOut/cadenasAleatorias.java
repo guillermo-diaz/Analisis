@@ -12,8 +12,8 @@ public class cadenasAleatorias {
     public static void main(String[] args) {
         String nombreArchivoSalida = "src/ejemplo_InOut/out/cadenasAl.txt";
 
-        try(BufferedWriter bufferEscritura = new BufferedWriter(new FileWriter(nombreArchivoSalida))) {
-
+        try {
+            BufferedWriter bufferEscritura = new BufferedWriter(new FileWriter(nombreArchivoSalida));
             for (int i = 0; i < 100; i++) {
                 String cadenaAleatoria = generarCadenaRandom();
                 System.out.println(cadenaAleatoria);
