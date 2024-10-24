@@ -1,4 +1,4 @@
-package ejemplo_InOut;
+package TP0.ejemplo_InOut;
 import java.util.Scanner;
 public class Ej3{
       public static void main(String[] args){

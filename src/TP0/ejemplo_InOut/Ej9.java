@@ -1,4 +1,4 @@
-package ejemplo_InOut;
+package TP0.ejemplo_InOut;
 
 public class Ej9 {
     public static void main(String[] args) {

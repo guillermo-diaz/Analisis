@@ -1,4 +1,4 @@
-package ejemplo_InOut;
+package TP0.ejemplo_InOut;
 
 public class Alumno  {
     

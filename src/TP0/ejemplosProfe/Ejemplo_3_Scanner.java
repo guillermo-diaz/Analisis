@@ -1,4 +1,4 @@
-package ejemplosProfe;
+package TP0.ejemplosProfe;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileNotFoundException;

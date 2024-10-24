@@ -1,4 +1,4 @@
-package ejemplo_InOut;
+package TP0.ejemplo_InOut;
 //TRAZA DEL ALGORITMO AÑADIR AL INFORME
 
 public class Ej1{

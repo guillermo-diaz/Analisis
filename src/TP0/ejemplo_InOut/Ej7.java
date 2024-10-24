@@ -1,4 +1,4 @@
-package ejemplo_InOut;
+package TP0.ejemplo_InOut;
 /*Al ordenar una lista de numeros enteros aplicando el algoritmo quicksort, como pivote se
 elige el primer elemento de la lista. ¿que pasarıa si se selecciona otro pivote? */
 public class Ej7 {
